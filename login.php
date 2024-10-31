@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
    <form action="" method="post">
       <h3>Welcome Back!</h3>
       <input type="email" name="email" required maxlength="50" placeholder="Enter Your Email" class="box">
-      <input type="password" name="pass" required maxlength="20" placeholder="Enter Your password" class="box">
+      <input type="password" name="pass" required maxlength="20" placeholder="Enter Your Password" class="box">
       <p>Don't have an account? <a href="register.html">Register now</a></p>
       <input type="submit" value="login now" name="submit" class="btn">
    </form>
@@ -64,14 +64,6 @@ if(isset($_POST['submit'])){
 </section>
 
 <!-- login section ends -->
-
-
-
-
-
-
-
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>

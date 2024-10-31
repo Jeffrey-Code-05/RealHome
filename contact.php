@@ -117,14 +117,6 @@ if(isset($_POST['send'])){
 <!-- faq section ends -->
 
 
-
-
-
-
-
-
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 <?php include 'components/footer.php'; ?>

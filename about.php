@@ -223,14 +223,6 @@ if(isset($_COOKIE['user_id'])){
 <!-- review section ends -->
 
 
-
-
-
-
-
-
-
-
 <?php include 'components/footer.php'; ?>
 
 <!-- custom js file link  -->

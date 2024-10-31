@@ -35,7 +35,7 @@ if(isset($_POST['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>requests</title>
+   <title>Requests</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -50,7 +50,7 @@ if(isset($_POST['delete'])){
 
 <section class="requests">
 
-   <h1 class="heading">all requests</h1>
+   <h1 class="heading">All Requests</h1>
 
    <div class="box-container">
 
@@ -69,14 +69,14 @@ if(isset($_POST['delete'])){
         $fetch_property = $select_property->fetch(PDO::FETCH_ASSOC);
    ?>
    <div class="box">
-      <p>name : <span><?= $fetch_sender['name']; ?></span></p>
-      <p>number : <a href="tel:<?= $fetch_sender['number']; ?>"><?= $fetch_sender['number']; ?></a></p>
-      <p>email : <a href="mailto:<?= $fetch_sender['email']; ?>"><?= $fetch_sender['email']; ?></a></p>
-      <p>enquiry for : <span><?= $fetch_property['property_name']; ?></span></p>
+      <p>Name : <span><?= $fetch_sender['name']; ?></span></p>
+      <p>Number : <a href="tel:<?= $fetch_sender['number']; ?>"><?= $fetch_sender['number']; ?></a></p>
+      <p>Email : <a href="mailto:<?= $fetch_sender['email']; ?>"><?= $fetch_sender['email']; ?></a></p>
+      <p>Enquiry for : <span><?= $fetch_property['property_name']; ?></span></p>
       <form action="" method="POST">
          <input type="hidden" name="request_id" value="<?= $fetch_request['id']; ?>">
          <input type="submit" value="delete request" class="btn" onclick="return confirm('remove this request?');" name="delete">
-         <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+         <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">View Property</a>
       </form>
    </div>
    <?php

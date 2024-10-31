@@ -63,11 +63,11 @@ if(isset($_POST['send'])){
          <img src="images/contact-img.svg" alt="">
       </div>
       <form action="" method="post">
-         <h3>get in touch</h3>
-         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
-         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
-         <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="enter your number" class="box">
-         <textarea name="message" placeholder="enter your message" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
+         <h3>Get In Touch</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Enter Your Name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="Enter Your Email" class="box">
+         <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="Enter Your Number" class="box">
+         <textarea name="message" placeholder="Enter Your Message" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
          <input type="submit" value="send message" name="send" class="btn">
       </form>
    </div>
@@ -85,33 +85,29 @@ if(isset($_POST['send'])){
    <div class="box-container">
 
       <div class="box active">
-         <h3><span>how to cancel booking?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
-      </div>
-
-      <div class="box active">
-         <h3><span>when will I get the possession?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
-      </div>
-
-      <div class="box">
-         <h3><span>where can I pay the rent?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+         <h3><span>When will I get the possession?</span><i class="fas fa-angle-down"></i></h3>
+         <p>On the scheduled closing date, which is usually
+            specified in your purchase agreement, you will
+            be taking ownership of your new home. You will
+            receive the keys and be able to move in on this
+            date, which is the official transfer of ownership.</p>
       </div>
 
       <div class="box">
-         <h3><span>how to contact with the buyers?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+         <h3><span>How to contact with the buyers?</span><i class="fas fa-angle-down"></i></h3>
+         <p>Start by signing into your account and going to the
+            "My Listings" section of our real estate website in
+            order to get in touch with possible purchasers. All
+            of your active listings are listed here, and you can
+            also check any messages or requests from potential buyers.</p>
       </div>
 
       <div class="box">
-         <h3><span>why my listing not showing up?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
-      </div>
-
-      <div class="box">
-         <h3><span>how to promote my listing?</span><i class="fas fa-angle-down"></i></h3>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+         <h3><span>Why my listing not showing up?</span><i class="fas fa-angle-down"></i></h3>
+         <p>here may be several reasons why your listing isn't appearing
+            on our real estate website. First, make sure your listing was
+            correctly submitted and is not in draft state. Potential buyers
+            won't see incomplete listings</p>
       </div>
 
    </div>

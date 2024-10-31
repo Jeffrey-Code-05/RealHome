@@ -87,7 +87,7 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>update</title>
+   <title>Update</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -103,13 +103,13 @@ if(isset($_POST['submit'])){
 <section class="form-container">
 
    <form action="" method="post">
-      <h3>update your account!</h3>
+      <h3>Update Your Account!</h3>
       <input type="tel" name="name" maxlength="50" placeholder="<?= $fetch_user['name']; ?>" class="box">
       <input type="email" name="email" maxlength="50" placeholder="<?= $fetch_user['email']; ?>" class="box">
       <input type="number" name="number" min="0" max="9999999999" maxlength="10" placeholder="<?= $fetch_user['number']; ?>" class="box">
-      <input type="password" name="old_pass" maxlength="20" placeholder="enter your old password" class="box">
-      <input type="password" name="new_pass" maxlength="20" placeholder="enter your new password" class="box">
-      <input type="password" name="c_pass" maxlength="20" placeholder="confirm your new password" class="box">
+      <input type="password" name="old_pass" maxlength="20" placeholder="Enter Your Old Password" class="box">
+      <input type="password" name="new_pass" maxlength="20" placeholder="Enter Your New Password" class="box">
+      <input type="password" name="c_pass" maxlength="20" placeholder="Confirm Your New Password" class="box">
       <input type="submit" value="update now" name="submit" class="btn">
    </form>
 

@@ -35,7 +35,7 @@ include 'components/save_send.php';
 
 <section class="listings">
 
-   <h1 class="heading">all listings</h1>
+   <h1 class="heading">All Listings</h1>
 
    <div class="box-container">
       <?php
@@ -82,11 +82,11 @@ include 'components/save_send.php';
             <?php
                if($select_saved->rowCount() > 0){
             ?>
-            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>saved</span></button>
+            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>Saved</span></button>
             <?php
                }else{ 
             ?>
-            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>save</span></button>
+            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>Save</span></button>
             <?php
                }
             ?>
@@ -110,13 +110,13 @@ include 'components/save_send.php';
             <div class="flex">
                <p><i class="fas fa-house"></i><span><?= $fetch_property['type']; ?></span></p>
                <p><i class="fas fa-tag"></i><span><?= $fetch_property['offer']; ?></span></p>
-               <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
+               <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> Bedrooms</span></p>
                <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-               <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+               <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>Squre Feet</span></p>
             </div>
             <div class="flex-btn">
-               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">View Property</a>
                <input type="submit" value="send enquiry" name="send" class="btn">
             </div>
          </div>

@@ -54,10 +54,10 @@ if(isset($_POST['delete'])){
 
 <section class="grid">
 
-   <h1 class="heading">messages</h1>
+   <h1 class="heading">Messages</h1>
 
    <form action="" method="POST" class="search-form">
-      <input type="text" name="search_box" placeholder="search messages..." maxlength="100" required>
+      <input type="text" name="search_box" placeholder="Search Messages..." maxlength="100" required>
       <button type="submit" class="fas fa-search" name="search_btn"></button>
    </form>
 
@@ -77,10 +77,10 @@ if(isset($_POST['delete'])){
          while($fetch_messages = $select_messages->fetch(PDO::FETCH_ASSOC)){
    ?>
    <div class="box">
-      <p>name : <span><?= $fetch_messages['name']; ?></span></p>
-      <p>email : <a href="mailto:<?= $fetch_messages['email']; ?>"><?= $fetch_messages['email']; ?></a></p>
-      <p>number : <a href="tel:<?= $fetch_messages['number']; ?>"><?= $fetch_messages['number']; ?></a></p>
-      <p>message : <span><?= $fetch_messages['message']; ?></span></p>
+      <p>Name : <span><?= $fetch_messages['name']; ?></span></p>
+      <p>Email : <a href="mailto:<?= $fetch_messages['email']; ?>"><?= $fetch_messages['email']; ?></a></p>
+      <p>Number : <a href="tel:<?= $fetch_messages['number']; ?>"><?= $fetch_messages['number']; ?></a></p>
+      <p>Message : <span><?= $fetch_messages['message']; ?></span></p>
       <form action="" method="POST">
          <input type="hidden" name="delete_id" value="<?= $fetch_messages['id']; ?>">
          <input type="submit" value="delete message" onclick="return confirm('delete this message?');" name="delete" class="delete-btn">
@@ -100,21 +100,7 @@ if(isset($_POST['delete'])){
 </section>
 
 <!-- messages section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 

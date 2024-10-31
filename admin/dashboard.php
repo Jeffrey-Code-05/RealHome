@@ -36,7 +36,7 @@ if(isset($_COOKIE['admin_id'])){
 
 <section class="dashboard">
 
-   <h1 class="heading">dashboard</h1>
+   <h1 class="heading">Dashboard</h1>
 
    <div class="box-container">
 
@@ -46,9 +46,9 @@ if(isset($_COOKIE['admin_id'])){
          $select_profile->execute([$admin_id]);
          $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
       ?>
-      <h3>welcome!</h3>
+      <h3>Welcome!</h3>
       <p><?= $fetch_profile['name']; ?></p>
-      <a href="update.php" class="btn">update profile</a>
+      <a href="update.php" class="btn">Update Profile</a>
    </div>
 
    <div class="box">
@@ -58,8 +58,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_listings = $select_listings->rowCount();
       ?>
       <h3><?= $count_listings; ?></h3>
-      <p>property posted</p>
-      <a href="listings.php" class="btn">view listings</a>
+      <p>Property Posted</p>
+      <a href="listings.php" class="btn">View Listings</a>
    </div>
 
    <div class="box">
@@ -69,8 +69,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_users = $select_users->rowCount();
       ?>
       <h3><?= $count_users; ?></h3>
-      <p>total users</p>
-      <a href="users.php" class="btn">view users</a>
+      <p>Total Users</p>
+      <a href="users.php" class="btn">View Users</a>
    </div>
 
    <div class="box">
@@ -80,8 +80,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_admins = $select_admins->rowCount();
       ?>
       <h3><?= $count_admins; ?></h3>
-      <p>total admins</p>
-      <a href="admins.php" class="btn">view admins</a>
+      <p>Total Admins</p>
+      <a href="admins.php" class="btn">View Admins</a>
    </div>
 
    <div class="box">
@@ -91,8 +91,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_messages = $select_messages->rowCount();
       ?>
       <h3><?= $count_messages; ?></h3>
-      <p>new messages</p>
-      <a href="messages.php" class="btn">view messages</a>
+      <p>New Messages</p>
+      <a href="messages.php" class="btn">View Messages</a>
    </div>
 
    </div>
@@ -101,25 +101,7 @@ if(isset($_COOKIE['admin_id'])){
 
 
 <!-- dashboard section ends -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 

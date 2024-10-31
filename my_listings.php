@@ -122,6 +122,9 @@ if(isset($_POST['delete'])){
       <div class="price"><i class="fas fa-indian-rupee-sign"></i><span><?= $fetch_property['price']; ?></span></div>
       <h3 class="name"><?= $fetch_property['property_name']; ?></h3>
       <p class="location"><i class="fas fa-map-marker-alt"></i><span><?= $fetch_property['address']; ?></span></p>
+
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.3395680825597!2d27.820251175080173!3d-26.12046906056842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9598d12daeba61%3A0x8ef75ba1473ef4fe!2s21%20Chelsea%20Ave%2C%20Silverfields%2C%20Krugersdorp%2C%201739!5e0!3m2!1sen!2sza!4v1730369126213!5m2!1sen!2sza" width="310" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
       <div class="flex-btn">
          <a href="update_property.php?get_id=<?= $property_id; ?>" class="btn">Update</a>
          <input type="submit" name="delete" value="delete" class="btn" onclick="return confirm('delete this listing?');">
